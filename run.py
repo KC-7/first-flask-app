@@ -7,23 +7,23 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html") 
+    return render_template("index.html")
     # Note: Flask expects this file to be in templates folder
 
 
 @app.route("/about")
 def about():
-    return render_template("about.html") 
+    return render_template("about.html")
 
 
 @app.route("/contact")
 def contact():
-    return render_template("contact.html") 
+    return render_template("contact.html")
 
 
 @app.route("/careers")
 def careers():
-    return render_template("careers.html") 
+    return render_template("careers.html")
 
 
 if __name__ == "__main__":
