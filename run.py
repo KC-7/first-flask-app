@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html") # Note: Flask expects this file to be in templates folder
+    return render_template("index.html") 
+    # Note: Flask expects this file to be in templates folder
 
 
 @app.route("/about")
