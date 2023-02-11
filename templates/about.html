@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block content%}
-<h2>About Page</h2>
+
+{% for number in list_of_numbers %}
+    <p> {{ number }}</p>
+{% endfor %}
+
+<h2>{{ page_title }}</h2>
 <p>
     Hi There! I'm Bob, the owner and operator of Scotland Auto Spa. I'm a highly skilled and experienced car
     detailing technician, specializing in providing elite detailing services for high-end luxury and sports vehicles.
