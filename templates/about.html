@@ -1,4 +1,52 @@
 {% extends "base.html" %}
 {% block content%}
-    <h2>About Page</h2>
+<h2>About Page</h2>
+<p>
+    Hi There! I'm Bob, the owner and operator of Scotland Auto Spa. I'm a highly skilled and experienced car
+    detailing technician, specializing in providing elite detailing services for high-end luxury and sports vehicles.
+    <br>
+    At Scotland Auto Spa, I understand that your vehicle is more than just a mode of transportation, it's a reflection
+    of who you are. That's why I strive to provide the best detailing services available. My services range from basic
+    washing and waxing to more comprehensive packages that include paint correction and ceramic coatings.
+    <br>
+    I have equipped my state-of-the-art facility with the latest technology and tools, allowing me to provide the
+    highest quality detailing services. I am trained to handle the most delicate surfaces, ensuring that your vehicle is
+    in safe hands.
+    <br>
+    At Scotland Auto Spa, I'm dedicated to providing you with the best possible detailing experience. If you're looking
+    for elite detailing services for your high-end luxury or sports vehicle, look no further. Book your appointment with
+    me today and experience the Scotland Auto Spa difference!
+</p>
+
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h3>Bob</h3>
+        <p>
+            My goal is to provide you with the ultimate car care experience. From the moment you walk through my doors,
+            you'll
+            be treated with the highest level of professionalism and customer service. I believe in building
+            long-lasting
+            relationships with my clients and that starts with providing the best detailing services possible.
+        </p>
+    </div>
+    <div class="col-md-5">
+        <img src="{{ url_for('static', filename='img/RRR.png') }}" alt="Image of a 2010 Range Rover">
+    </div>
+</div>
+
+<div class="row featurette">
+    <div class="col-md-5">
+        <img src="{{ url_for('static', filename='img/porsche.jpg') }}" alt="Image of a Porsche GT3 RS">
+    </div>
+    <div class="col-md-7">
+        <h3>Tony</h3>
+        <p>
+            Tony is a valued helper at Auto Spa Scotland. With a passion for all things cars, Tony assists Bob
+            in providing the best detailing services for high-end luxury and sports vehicles. His attention to
+            detail and commitment to excellence make him a valuable member of the Auto Spa Scotland team.
+        </p>
+    </div>
+</div>
+
 {% endblock %}
