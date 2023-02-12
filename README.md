@@ -19,6 +19,7 @@ A website for a fictional car detailing company. This web application was create
 - [Libraries](#libraries)
 - [Future Improvements](#future-improvements)
 - [How to Run](#how-to-run)
+- [Deployment](#deployment)
 - [Conclusion](#conclusion)
 - [Credits](#credits)
 
@@ -43,7 +44,8 @@ The Flask framework was used to build the entire web application. Flask allows d
 ## Route Decorators
 Flask uses route decorators to specify the URL and corresponding function that should be triggered when the URL is requested. In this project, the following route decorators were used:
 
-  `@app.route("/")
+```
+  @app.route("/")
   def index():
   ...
 
@@ -61,7 +63,8 @@ Flask uses route decorators to specify the URL and corresponding function that s
 
   @app.route("/careers")
   def careers():
-  ...`
+  ...
+ ```
 
 ------
 
@@ -119,6 +122,12 @@ Type `python3 run.py`,
 A blue button should appear, click: _Make Public_,
 
 Another blue button should appear, click: _Open Browser_.
+
+------
+
+## Deployment
+
+The  site was deployed using Heroku. 
 
 ------
 
