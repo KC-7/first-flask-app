@@ -3,6 +3,7 @@
     border-radius: 25px;
 }
 
+/* Used for user feedback after sumbitting contact form */
 .flashes {
     list-style-type: none;
     color: red;
