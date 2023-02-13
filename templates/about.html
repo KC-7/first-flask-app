@@ -2,58 +2,72 @@
 {% block content%}
 
 <h2>{{ page_title }}</h2>
-<p>
-    Auto Spa Scotland is a premier car detailing company located in Scotland, specializing in providing elite detailing services for high-end luxury and sports vehicles. Our team of experienced technicians takes pride in delivering exceptional car care services that leave your vehicle looking and feeling its best.
-    <br>
-    At Auto Spa Scotland, we understand that your vehicle is more than just a mode of transportation, it's a reflection of who you are. That's why we strive to provide the best detailing services available. Our detailing services range from basic washing and waxing to more comprehensive packages that include paint correction and ceramic coatings.
-    <br>    
-    Our state-of-the-art facility is equipped with the latest technology and tools, allowing us to provide the highest quality detailing services. Our technicians are trained to handle the most delicate surfaces, ensuring that your vehicle is in safe hands.
-    <br>    
-    Our goal is to provide our clients with the ultimate car care experience. From the moment you walk through our doors, you'll be treated with the highest level of professionalism and customer service. We believe in building long-lasting relationships with our clients and that starts with providing the best detailing services possible.
-    <br>
-    At Auto Spa Scotland, we're dedicated to providing our clients with the best possible detailing experience. If you're looking for elite detailing services for your high-end luxury or sports vehicle, look no further. Book your appointment today and experience the Auto Spa Scotland difference!
-</p>
+<div>
+    <p>Auto Spa Scotland is a premier car detailing company located in Scotland, specializing in providing elite
+        detailing services for high-end luxury and sports vehicles. Our team of experienced technicians takes pride in
+        delivering exceptional car care services that leave your vehicle looking and feeling its best.
+    </p>
+    <p>At Auto Spa Scotland, we understand that your vehicle is more than just a mode of transportation, it's a
+        reflection of who you are. That's why we strive to provide the best detailing services available. Our detailing
+        services range from basic washing and waxing to more comprehensive packages that include paint correction and
+        ceramic coatings.
+    </p>
+    <p>Our state-of-the-art facility is equipped with the latest technology and tools, allowing us to provide the
+        highest quality detailing services. Our technicians are trained to handle the most delicate surfaces, ensuring
+        that your vehicle is in safe hands.
+    </p>
+    <p>Our goal is to provide our clients with the ultimate car care experience. From the moment you walk through our
+        doors, you'll be treated with the highest level of professionalism and customer service. We believe in building
+        long-lasting relationships with our clients and that starts with providing the best detailing services possible.
+    </p>
+    <p>At Auto Spa Scotland, we're dedicated to providing our clients with the best possible detailing experience. If
+        you're looking for elite detailing services for your high-end luxury or sports vehicle, look no further. Book
+        your appointment today and experience the Auto Spa Scotland difference!
+    </p>
+</div>
+
+<hr>
 
 {% for member in company %}
 
-    <div class="row featurette">
+<div class="row featurette">
 
-        {% if loop.index % 2 != 0 %}
+    {% if loop.index % 2 != 0 %}
 
-            <div class="col-md-7">
-                <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
-                <p>
-                    {{ member.description }}
-                </p>
-            </div>
-
-            <div class="col-md-5">
-                <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
-            </div>
-
-            {% else %}
-
-            <div class="col-md-5">
-                <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
-            </div>
-
-            <div class="col-md-7">
-                <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
-                <!-- <h3><a href="/about/{{ member.name|replace(' ', '-')|replace('&', 'and')|replace('Ó', 'O')|lower }}">{{ loop.index }}. {{ member.name }}</a></h3> -->
-                <p>
-                    {{ member.description }}
-                </p>
-            </div>
-
-        {% endif %}
-
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
+        <p>
+            {{ member.description }}
+        </p>
     </div>
 
-    {% if loop.index != loop.length %}
+    <div class="col-md-5">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+    </div>
 
-        <hr class="featurette-divider">
+    {% else %}
+
+    <div class="col-md-5">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+    </div>
+
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
+        <!-- <h3><a href="/about/{{ member.name|replace(' ', '-')|replace('&', 'and')|replace('Ó', 'O')|lower }}">{{ loop.index }}. {{ member.name }}</a></h3> -->
+        <p>
+            {{ member.description }}
+        </p>
+    </div>
 
     {% endif %}
+
+</div>
+
+{% if loop.index != loop.length %}
+
+<hr class="featurette-divider">
+
+{% endif %}
 
 {% endfor %}
 
