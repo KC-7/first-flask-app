@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content%}
+
+<h2>{{ page_title }}</h2>
+<div>
+    <p>Discover the full range of detailing services offered at Auto Spa Scotland. Our experienced technicians
+        specialize in providing the best care for high-end luxury and sports vehicles. From basic washing and waxing to
+        comprehensive packages that include paint correction and ceramic coatings, we have you covered. 
+    </p>    
+    <p>Our state-of-the-art facility is equipped with the latest technology and tools to ensure that your vehicle is in
+        safe hands. Our goal is to provide the ultimate car care experience, with a focus on professionalism, customer
+        service, and long-lasting relationships with our clients. Book your appointment today and let us bring out the
+        best in your vehicle.
+    </p>
+</div>
+
+<hr>
+
+<!-- {% for member in company %}
+
+<div class="row featurette">
+
+    {% if loop.index % 2 != 0 %}
+
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
+        <p>
+            {{ member.description }}
+        </p>
+    </div>
+
+    <div class="col-md-5">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+    </div>
+
+    {% else %}
+
+    <div class="col-md-5">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+    </div>
+
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
+        <p>
+            {{ member.description }}
+        </p>
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% if loop.index != loop.length %}
+
+<hr class="featurette-divider"> 
+
+{% endif %}
+
+{% endfor %} -->
+
+{% endblock %}
